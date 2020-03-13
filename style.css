@@ -1,0 +1,240 @@
+
+h1{
+    padding-left: 2rem;
+}
+
+.main-navigation{
+    background-color: rgb(65, 65, 65);
+    margin: 0;
+}
+.main-navigation>ul{   /*On enlève les marges qui sont posé par défaut */
+    margin: 0;
+    padding: 0;
+    height: 30px;
+    padding-top: 1rem;
+}
+.main-navigation>ul>li{   /* Ici <ul> englobe <li> -> les puces sont au <li>*/
+    list-style: none;  /*Enlèvement des puces */
+    display: inline-block;   /* ne pas oublier les commentaires devant chaque inline-block pour parer à la marge auto de 4px */
+}
+
+.main-navigation>ul>li>a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: 25px 20px;
+    margin: 0;
+}
+
+.content-1{
+    background-color: grey;
+}
+
+h2{
+    margin: 0em;
+    height: 40px;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.content-1>p{
+    margin: 0;
+    height: 40px;
+    padding-left: 1rem;
+}
+
+.gras{
+    font-weight: bold;
+}
+
+.background{
+    height: 400px;
+    background-image: url('../images/external-content.duckduckgo.com.jfif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    
+}
+
+.content-2{
+    width: 100%;
+}   
+
+.articl{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* positionnement horizontal  des colonnes */
+    align-content: space-around;
+}
+.articl article{  /* article de mes article*/
+    width: 250px;
+    text-align: justify;
+    height: 250px;
+    padding-right: 2rem;
+}
+
+article>h3{
+    text-align: left;
+}
+
+
+hr{
+    color: #008ba3;
+    width: 50%;
+}
+
+.content-3{
+    text-align: center;
+}
+
+.contact{
+    text-align: center;
+    width: 100%;
+    align-items: center;
+}
+
+#name{
+    border: 2px solid darkcyan;
+}
+
+#email{
+    border: 2px solid darkcyan;
+}
+
+#submit{
+    color: white;
+    background-color: darkcyan;
+}
+
+
+footer{
+    text-align: center;
+    background-color: black;
+    border: 2px black solid;
+    width: 100%;
+    height: 120px;
+    margin: 1rem;
+    margin-left: 0;
+}
+
+.icon{
+    font-size: 17px;
+    padding: 2rem;
+    
+}
+
+.icon a{
+    color: white;
+    text-decoration: none;
+    
+}
+
+.readmore{
+    margin: 0.5rem;
+}
+
+.fa-facebook-square{
+    color: #3b5998;
+}
+
+.fa-twitter{
+    color: #00aced;
+}
+
+.fa-pinterest{
+    color: #bd081c;
+}
+
+.fa-snapchat{
+    color: #fffc01;
+}
+
+/*Changement media queries */
+@media screen and (max-width: 500px){
+    body{
+        display: block;
+        text-align: justify;
+        font-size: initial;
+        
+    }
+    
+h1{
+    width: 50%;
+    font-size: 1.5rem;
+}
+
+    .background{
+        display: none;
+    }
+
+    .main-navigation>ul{
+        height: 100px;
+        padding-top: 0.5rem;
+    }
+  
+    .main-navigation>ul>li{
+        display: block;
+        text-align: center;
+    }
+
+    h2{
+        height: 24px;
+        width: 50%;
+        font-size: initial;
+        padding-bottom: 1rem;
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .content-1{
+        width: 100%;
+        height: 200px;
+    }
+
+    .content-1>h2{
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+    }
+
+    .content-1>p{
+        padding-left: 0.5rem;
+        padding-right: 30px;
+        text-align: justify;
+        height: 50px;
+        font-size: initial;
+    }
+
+    .content-2>h2{
+        width: 50%;
+        height: 50px;
+        padding-bottom: 1.5rem;
+    }
+
+    .articl{
+        padding-top: 0.5rem;
+        padding-left: 0.5rem;
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: initial;
+    }
+
+    .article>article{
+        width: 90%;
+        height: 200px;
+    }
+
+    footer{
+        margin-top: 250px;
+    }
+    
+    .main-navigation>ul>li>a{
+
+    }
+}
